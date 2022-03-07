@@ -1,0 +1,83 @@
+.sort{
+//display: flex;
+//justify-content: space-between;
+}
+
+.filter{
+  padding: 40px 0 32px 0;
+}
+
+.filter__container {
+  display: flex;
+  gap: 8px;
+}
+
+.filter__container .tag{
+  margin-right: 8px;
+}
+
+.sort__block{
+  height: 46px;
+  margin-top: auto;
+}
+.sort__label{
+
+}
+.sort__popup{
+
+}
+.sort__popup-list{
+  list-style: none;
+  display: none;
+}
+
+.sort__popup-item{
+  background-color: #f9f9f9;
+  padding: 13px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.tag{
+  border: 0;
+  cursor: pointer;
+  padding: 11px 26px;
+  color: #2C2C2C;
+  border-radius: 36px;
+  background-color: #F9F9F9;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  max-width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  outline: none;
+  user-select: none;
+}
+
+.tag._active{
+  color: #fff;
+  background-color: #2C2C2C;
+}
+
+.tag:disabled, .tag._disabled{
+  pointer-events: none;
+  cursor: default;
+  /*opacity: .5;*/
+}
+
+.tag:focus{
+  box-shadow: 0 0 0 4px aqua;
+}
+
+.tag--brand{
+
+}
