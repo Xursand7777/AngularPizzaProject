@@ -1,0 +1,21 @@
+.sort__popup-list {
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  background-color: #FFFFFF;
+}
+
+.sort__popup-item {
+  background-color: #f9f9f9;
+  padding: 10px 14px;
+  line-height: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.popup_item--active{
+  color: #EB5A1E;
+  transition: color 0.2s ease-in-out;
+}

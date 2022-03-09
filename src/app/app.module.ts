@@ -12,6 +12,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { PizzaComponent } from './components/pizza/pizza.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { PopupItemComponent } from './components/popup/popup-item/popup-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PopupComponent } from './components/popup/popup.component';
     FilterComponent,
     TabsComponent,
     PizzaComponent,
-    PopupComponent
+    PopupComponent,
+    PopupItemComponent
   ],
     imports: [
         BrowserModule,

@@ -1,8 +1,8 @@
 <div class="sort">
   <div class="filter">
     <div class="filter__container">
-      <app-tabs [items]="tabItems" (onChange)="handleTabItems($event)"></app-tabs>
-      <app-popup></app-popup>
+      <app-tabs [items]="tabItems" (onChange)="handleTabItems($event)" [selectedItem]="selectedTab" ></app-tabs>
+      <app-popup [items]="popUpItems" (onChange)="handlePopUp($event)" [selectedItem]="selectedPopUp"></app-popup>
     </div>
   </div>
 

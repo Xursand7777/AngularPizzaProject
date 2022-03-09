@@ -26,13 +26,13 @@ export const filterTabs: TabItem[] = [
     active: false,
   },
   {
-    index: 4,
+    index: 5,
     title: 'Острые',
     count: null,
     active: false,
   },
   {
-    index: 4,
+    index: 6,
     title: 'Закрытые',
     count: null,
     active: false,

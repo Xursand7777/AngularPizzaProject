@@ -2,11 +2,7 @@
   display: flex;
 }
 
-.tab__item{
-  cursor: pointer;
-}
-
-.tag {
+.tab {
   border: 0;
   cursor: pointer;
   padding: 11px 26px;
@@ -28,21 +24,16 @@
   margin-right: 8px;
 }
 
-.tag--active {
+.tab--active {
   color: #fff;
   background-color: #2C2C2C;
 }
 
-.tag:disabled, .tag._disabled {
+.tab:disabled, .tab._disabled {
   pointer-events: none;
   cursor: default;
   /*opacity: .5;*/
 }
 
-.tag:focus {
-  box-shadow: 0 0 0 4px aqua;
-}
 
-.tag--brand {
 
-}

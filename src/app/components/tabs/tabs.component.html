@@ -4,19 +4,13 @@
     *ngFor=" let item of items"
     >
     <button  (click)="selectTab(item.index)"
-             [class.tag--active]="item.index === selectedItem"
+             [class.tab--active]="item.index === selectedItem"
              type="button"
-             class="tag"
+             class="tab"
     >
       {{item.title}}</button>
   </li>
 </ul>
 
-
-<!--<button type="button" class=" tag&#45;&#45;brand tag _disabled">Мясные</button>-->
-<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Вегетерианская</button>-->
-<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Гриль</button>-->
-<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Острые</button>-->
-<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Закрытые</button>-->
 
 

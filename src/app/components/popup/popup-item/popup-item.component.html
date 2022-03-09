@@ -1,0 +1,8 @@
+<ul class="sort__popup-list">
+  <li
+    *ngFor=" let item of items"
+    (click)="selectPopUp(item.index)"
+    [class.popup_item--active]="item.index === selectedItem"
+    class="sort__popup-item"
+  >{{item.title}}</li>
+</ul>

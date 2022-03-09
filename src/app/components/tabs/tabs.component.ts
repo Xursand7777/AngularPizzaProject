@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
 import {TabItem} from "../../core/models/TabItem";
 import {defaultTabIndex} from "../../core/constants/filterTabs.const";
 
@@ -7,18 +7,20 @@ import {defaultTabIndex} from "../../core/constants/filterTabs.const";
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.css']
 })
-export class TabsComponent implements OnInit {
+export class TabsComponent implements OnInit, OnChanges {
   @Input() items: TabItem[] = [];
-  @Input() selectedItem: number = defaultTabIndex;
+  @Input() selectedItem: number;
   @Output() onChange = new EventEmitter();
   constructor() { }
-
+  ngOnChanges(): void {
+  console.log(this.items)
+  }
   ngOnInit(): void {
 
   }
 
 
-  public selectTab = (index: number): void => {
+  public selectTab = (index:number): void => {
     this.onChange.emit(index)
   };
 
