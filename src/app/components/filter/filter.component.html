@@ -1,1 +1,9 @@
-<app-tabs></app-tabs>
+<div class="sort">
+  <div class="filter">
+    <div class="filter__container">
+      <app-tabs [items]="tabItems" (onChange)="handleTabItems($event)"></app-tabs>
+      <app-popup></app-popup>
+    </div>
+  </div>
+
+</div>

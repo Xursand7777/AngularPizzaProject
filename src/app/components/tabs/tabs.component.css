@@ -1,47 +1,12 @@
-.sort{
-//display: flex;
-//justify-content: space-between;
-}
-
-.filter{
-  padding: 40px 0 32px 0;
-}
-
-.filter__container {
+.tabs{
   display: flex;
-  gap: 8px;
 }
 
-.filter__container .tag{
-  margin-right: 8px;
-}
-
-.sort__block{
-  height: 46px;
-  margin-top: auto;
-}
-.sort__label{
-
-}
-.sort__popup{
-
-}
-.sort__popup-list{
-  list-style: none;
-  display: none;
-}
-
-.sort__popup-item{
-  background-color: #f9f9f9;
-  padding: 13px 30px;
-  border-radius: 30px;
-  margin-right: 10px;
-  font-weight: bold;
+.tab__item{
   cursor: pointer;
-  transition: background-color 0.1s ease-in-out;
 }
 
-.tag{
+.tag {
   border: 0;
   cursor: pointer;
   padding: 11px 26px;
@@ -55,29 +20,29 @@
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  max-width: 120px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   outline: none;
   user-select: none;
+  margin-right: 8px;
 }
 
-.tag._active{
+.tag--active {
   color: #fff;
   background-color: #2C2C2C;
 }
 
-.tag:disabled, .tag._disabled{
+.tag:disabled, .tag._disabled {
   pointer-events: none;
   cursor: default;
   /*opacity: .5;*/
 }
 
-.tag:focus{
+.tag:focus {
   box-shadow: 0 0 0 4px aqua;
 }
 
-.tag--brand{
+.tag--brand {
 
 }

@@ -10,6 +10,8 @@ import { AppBasketComponent } from './components/app-basket/app-basket.component
 import { AppRoutingModule } from './app-routing.module';
 import { FilterComponent } from './components/filter/filter.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { PizzaComponent } from './components/pizza/pizza.component';
+import { PopupComponent } from './components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
     AppLogoComponent,
     AppBasketComponent,
     FilterComponent,
-    TabsComponent
+    TabsComponent,
+    PizzaComponent,
+    PopupComponent
   ],
     imports: [
         BrowserModule,

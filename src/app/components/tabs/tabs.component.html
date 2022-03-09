@@ -1,29 +1,22 @@
-<div class="sort">
-  <div class="filter">
-    <div class="filter__container container">
-      <button disabled type="button" class="tag _active">Все</button>
-      <button class="filter__tag tag--brand tag _disabled">Мясные</button>
-      <button class="filter__tag tag--brand tag _disabled">Вегетерианская</button>
-      <button class="filter__tag tag--brand tag _disabled">Гриль</button>
-      <button class="filter__tag tag--brand tag _disabled">Острые</button>
-      <button class="filter__tag tag--brand tag _disabled">Закрытые</button>
-
-      <div class="sort__block">
-        <div class="sort__label">
-          <img src="assets/img/Vector.svg" alt="">
-          <b>Сортировка по:</b>
-          <span class="sort__label-text">популярности</span>
-        </div>
-        <div class="sort__popup">
-          <ul class="sort__popup-list">
-            <li class="sort__popup-item sort__popup-active">популярности</li>
-            <li class="sort__popup-item">цене</li>
-            <li class="sort__popup-item">алфавиту</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+<ul class="tabs">
+  <li
+    class="tab__item"
+    *ngFor=" let item of items"
+    >
+    <button  (click)="selectTab(item.index)"
+             [class.tag--active]="item.index === selectedItem"
+             type="button"
+             class="tag"
+    >
+      {{item.title}}</button>
+  </li>
+</ul>
 
 
-</div>
+<!--<button type="button" class=" tag&#45;&#45;brand tag _disabled">Мясные</button>-->
+<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Вегетерианская</button>-->
+<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Гриль</button>-->
+<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Острые</button>-->
+<!--<button type="button" class="filter__tag tag&#45;&#45;brand tag _disabled">Закрытые</button>-->
+
+
