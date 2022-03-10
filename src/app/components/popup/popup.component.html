@@ -4,5 +4,5 @@
     <b>Сортировка по:</b>
     <span class="sort__label-text">популярности</span>
   </div>
-  <app-popup-item></app-popup-item>
+  <app-popup-item [items]="popUpItems" (onChange)="handlePopUp($event)" [selectedItem]="selectedPopUp"></app-popup-item>
 </div>

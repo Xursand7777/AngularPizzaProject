@@ -10,6 +10,7 @@ export class PopupItemComponent implements OnInit {
   @Input() items: PopupItem[] = [];
   @Input() selectedItem: number;
   @Output() onChange = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {

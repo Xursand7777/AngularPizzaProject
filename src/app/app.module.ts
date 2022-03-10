@@ -13,6 +13,12 @@ import { TabsComponent } from './components/tabs/tabs.component';
 import { PizzaComponent } from './components/pizza/pizza.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { PopupItemComponent } from './components/popup/popup-item/popup-item.component';
+import {StoreModule} from "@ngrx/store";
+import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {EffectsModule} from "@ngrx/effects";
+import {environment} from "../environments/environment.prod";
+import {viewAreaInfoReducer} from "./store/reducers/view-area-info.reducer";
+import {ViewAreaInfoEffects} from "./store/effects/view-area-info.effects";
 
 @NgModule({
   declarations: [
@@ -30,7 +36,17 @@ import { PopupItemComponent } from './components/popup/popup-item/popup-item.com
     imports: [
         BrowserModule,
         RouterModule,
-        AppRoutingModule
+        AppRoutingModule,
+      StoreModule.forRoot({
+        viewArea: viewAreaInfoReducer
+      }),
+      StoreDevtoolsModule.instrument({
+        maxAge: 25,
+        logOnly: environment.production
+      }),
+      EffectsModule.forRoot([
+        ViewAreaInfoEffects
+      ])
     ],
   providers: [],
   bootstrap: [AppComponent]
